@@ -1,2 +1,2 @@
 ###Personal Blog.
-###No technology, just thoughts.
+##About what I've done.
