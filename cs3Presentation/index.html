@@ -13,6 +13,17 @@
 
     <link rel="shortcut icon" href="favicon.png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/cufon-yui.js" type="text/javascript"></script>
+<script src="js/cufon-replace.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/Josefin_Sans_600.font.js"></script>
+<script type="text/javascript" src="js/Lobster_400.font.js"></script>
+<script type="text/javascript" src="js/sprites.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.settings.js"></script>
+<script type="text/javascript" src="js/gSlider.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
 </head>
 
 <body class="impress-not-supported">
@@ -27,19 +38,20 @@
 
 <div id="impress">
 
-    <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
+    <div class="step slide" data-x="-1000" data-y="-1500">
+        <img src = "images/hz2.png" alt = "." width = "800px;" height = "600px;" />
+    </div>
+
+      <div class="step slide" data-x="0" data-y="-1500">
+        <q>今天，借此机会在此介绍我们11计科三班，这个充满友爱的班集体。</q>
+    </div>
+      <div id="bored" class="step slide" data-x="1000" data-y="-1500">
         <!--<q>aren't you just <b>bored</b> with all those slides-based presentations?</q>-->
         <q style="font-size: larger;">从大一刚踏进校园，到大二熟悉了校园、熟悉了彼此的我们...</q>
         <q>大学里我们一同走过...</q>
     </div>
 
-    <div class="step slide" data-x="0" data-y="-1500">
-        <q>今天，借此机会在此介绍我们11计科三班，这个充满友爱的班集体。</q>
-    </div>
 
-    <div class="step slide" data-x="1000" data-y="-1500">
-        <img src = "images/hz2.png" alt = "." width = "800px;" height = "600px;" />
-    </div>
 
     <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
         <!--<span class="try">then you should try</span>-->
@@ -53,8 +65,8 @@
         <!--<p>It's a <strong>presentation tool</strong> <br/>-->
         <!--inspired by the idea behind <a href="http://prezi.com">prezi.com</a> <br/>-->
         <!--and based on the <strong>power of CSS3 transforms and transitions</strong> in modern browsers.</p>-->
-        <pre style="padding-left:150px;">
-11计三：
+        <pre style="padding-left:600px;">
+主体架构：
         • 团支部建设
         • 学风建设
         • 成员发展
@@ -121,7 +133,7 @@
         <p style = "font-size: 40px;">这种情况下，班里每位同学都初步确定了自己的发展方向，力争上游，班级呈现一种催人上进的良性竞争学风氛围。</p>
     </div>
 
-    <div id="old-source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
+    <div id="old-source" class="step" data-x="6300" data-y="2000" data-rotate="-20" data-scale="4">
         <!--<p>want to know more?</p>-->
         <!--<q><a href="http://github.com/bartaz/impress.js">use the source</a>, Luke!</q>-->
         <p>班级建设：</p>
@@ -142,7 +154,7 @@
         <span class="footnote">*实现资料和信息的快速传播 ;)</span>
     </div>
 
-    <div class="step slide" data-x="10000" data-y="13300">
+    <div class="step slide" data-x="10000" data-y="14100">
         <p>班级通讯：</p>
         <img src = "images/class" width = "800px;" height = "600px;"/>
     </div>
@@ -152,8 +164,31 @@
     <div class="step slide" data-x="6000" data-y="-1500">
         <p>
         <b>一路走来活动展示：</b> <br /><br />
-        <p>大一军训：</p>
+        <!--<p>大一军训：</p>-->
+		<!-- audio player begin -->
+		<div id="jplayer"></div>
+		<div class="jp-audio">
+		<h2></h2>
+		<div class="jp-type-single">
+			<div id="jp_interface_1" class="jp-interface">
+			<ul class="jp-controls">
+				<li><a href="#" class="jp-next">大一军训：</a></li>
         <img src = "images/军训.jpg" width = "800px;" height = "550px;"/>
+				<li><a href="#" class="jp-play"></a></li>
+				<li><a href="#" class="jp-pause"></a></li>
+				<li><a href="#" class="jp-prev"></a></li>
+				<li><a href="#" class="jp-more-songs"></a></li>
+			</ul>
+			<div class="jp-progress">
+				<div class="jp-seek-bar">
+				<div class="jp-play-bar"></div>
+				</div>
+			</div>
+			<div class="jp-title"></div>
+			</div>
+		</div>
+		</div>
+		<!-- audio player end -->
         </p>
     </div>
 
@@ -167,22 +202,22 @@
         <img src = "images/chang.jpg" width = "800px;" height = "600px;"/>
     </div>
 
-    <div class="step slide" data-x="10000" data-y="14100">
+    <div class="step slide" data-x="10000" data-y="14900">
         <p>中心湖联谊：</p>
         <img src = "images/zhong.png" width = "800px;" height = "600px;"/>
     </div>
 
-    <div class="step slide" data-x="10000" data-y="14900">
+    <div class="step slide" data-x="10000" data-y="15800">
         <p>平安夜：</p>
         <img src = "images/平安夜.jpg" width = "800px;" height = "600px;"/>
     </div>
 
-    <div class="step slide" data-x="10000" data-y="15800">
+    <div class="step slide" data-x="10000" data-y="16600">
         <p>班级新年贺卡：</p>
         <img src = "images/班级新年贺卡.PNG" width = "800px;" height = "600px;"/>
     </div>
 
-    <div class="step slide" data-x="10000" data-y="16600">
+    <div class="step slide" data-x="10000" data-y="17400">
         <p>班级篮球赛：</p>
         <img src = "images/宿舍杯1.png" width = "800px;" height = "600px;"/>
     </div>
@@ -237,27 +272,12 @@
 
     <div class="step slide" data-x="9000" data-y="11400">
         <p>鼎湖山出游：</p>
-        <img src = "images/ding1.png" width = "800px;" height = "600px;"/>
+        <img src = "images/ding2.png" width = "800px;" height = "600px;"/>
     </div>
 
     <div class="step slide" data-x="9000" data-y="12200">
         <p>鼎湖山出游：</p>
-        <img src = "images/ding2.png" width = "800px;" height = "600px;"/>
-    </div>
-
-    <div class="step slide" data-x="9000" data-y="13000">
-        <p>鼎湖山出游：</p>
-        <img src = "images/ding3.png" width = "800px;" height = "600px;"/>
-    </div>
-
-    <div class="step slide" data-x="9000" data-y="13800">
-        <p>鼎湖山出游：</p>
         <img src = "images/ding4.png" width = "800px;" height = "600px;"/>
-    </div>
-
-    <div class="step slide" data-x="9000" data-y="14600">
-        <p>鼎湖山出游：</p>
-        <img src = "images/ding5.png" width = "800px;" height = "600px;"/>
     </div>
 
     <div class="step slide" data-x="5300" data-y="2500">
@@ -270,6 +290,10 @@
         <p style = "padding-top:70px; font-size: 60px; padding-left:100px;">支部的成员还积极回报社会，争做志愿者，志愿时达805小时。</p>
     </div>
 
+    <div class="step" data-x="100" data-y="2095" data-rotate = "20" data-scale="4">
+        <!--<span class="try">then you should try</span>-->
+        <img src = "images/love.jpg" width = "800px;" height = "600px;" alt = "love" />
+    </div>
     <div class="step" data-x="0" data-y="600" data-scale="4">
         <!--<span class="try">then you should try</span>-->
         <p style = "padding-top:70px; font-size: 100px; padding-left:100px;">Thank you!<sup>*</sup></p>
